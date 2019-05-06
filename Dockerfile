@@ -10,4 +10,6 @@ RUN mkdir /etc/gobgp
 
 WORKDIR /go
 
-CMD gobgpd -f /etc/gobgp/gobgp.conf -p > /etc/gobgp/log & sh /etc/gobgp/routes.sh
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT /entrypoint.sh
