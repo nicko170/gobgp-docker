@@ -4,7 +4,7 @@ MAINTAINER Nick Pratley <nick@npratley.net>
 
 EXPOSE 179
 
-RUN go get -v github.com/osrg/gobgp/gobgpd && go get -v github.com/osrg/gobgp/gobgp
+RUN go get -v github.com/osrg/gobgp/cmd/gobgpd && go get -v github.com/osrg/gobgp/cmd/gobgp
 
 RUN mkdir /etc/gobgp
 
